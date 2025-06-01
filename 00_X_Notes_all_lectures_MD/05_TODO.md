@@ -1,0 +1,203 @@
+---
+title: Python Basics Lecture 5
+author: PZA
+date: 2025-03
+tags: [python, while-loop, control-flow, loop, education]
+---
+
+# 🐍 Python Basics (PB), Mar 2025  
+## Lecture 5: `while` Loops & Logical Flow
+
+---
+
+## 📚 Table of Contents
+
+- [🔁 `while` Loop Mechanics](#-while-loop-mechanics)
+- [🔁 Example with `break` and `continue`](#-example-with-break-and-continue)
+- [🧠 Infinite Loops](#-infinite-loops)
+- [🏁 Goal-Based Looping](#-goal-based-looping)
+- [📐 `while-else` Construct](#-while-else-construct)
+- [🧱 Complex Conditions](#-complex-conditions)
+- [🧼 DRY Principle](#-dry-principle)
+- [🧩 Practice Questions](#-practice-questions)
+
+---
+
+## 🔁 `while` Loop Mechanics
+
+The `while` loop repeats **as long as a condition is true**.
+
+### 🔢 Steps:
+
+1. **Initialization**  
+2. **Condition check**  
+3. **Logic + condition update**
+
+```python
+counter = 0                     # 1. initialization
+while counter < 5:              # 2. condition
+    print(counter)
+    counter += 1                # 3. update
+```
+
+> ⚠️ Without the update, the loop may never end!
+
+---
+
+## 🔁 Example with `break` and `continue`
+
+```python
+value = 0
+while value < 10:
+    value += 1
+
+    if value == 5:
+        break        # exits the loop immediately
+
+    if value % 2 == 0:
+        continue     # skips to the next loop iteration
+
+    print(value)
+```
+
+### Key Notes:
+- `break`: stop loop completely  
+- `continue`: skip rest of current iteration  
+- ✅ Always **update condition before `continue`**
+
+---
+
+## 🧠 Infinite Loops
+
+```python
+while True:
+    ...
+```
+
+Used when loop should run **until an internal condition is met**.
+
+---
+
+## 🏁 Goal-Based Looping
+
+```python
+is_goal_achieved = False
+
+while not is_goal_achieved:
+    # do stuff
+    if some_condition:
+        is_goal_achieved = True
+```
+
+> 🎯 Keep looping until your goal is achieved. Works well for menu loops, game loops, etc.
+
+---
+
+## 📐 `while-else` Construct
+
+Similar to `for-else`, the `else` runs **only if the loop ends without `break`**.
+
+```python
+x = 0
+while x < 5:
+    if x == 3:
+        break
+    x += 1
+else:
+    print("Finished without break")
+```
+
+---
+
+## 🧱 Complex Conditions
+
+Python supports chaining logic in conditions:
+
+```python
+while cond1 and cond2 and not cond3:
+    do_something()
+```
+
+> 💡 You can use parentheses to control evaluation order
+
+---
+
+## 🧼 DRY Principle
+
+**DRY = Don’t Repeat Yourself**
+
+- Avoid duplicate code inside loops  
+- Extract repeated logic into functions or clearly structured blocks  
+- Improves maintainability and reduces bugs
+
+---
+
+## 🧩 Practice Questions
+
+### Q1: What does this output?
+
+```python
+i = 0
+while i < 3:
+    print(i)
+    i += 1
+```
+
+- a) 0 1 2 ✅  
+- b) 1 2 3  
+- c) Infinite loop  
+- d) Error
+
+---
+
+### Q2: Which statement stops a `while` loop?
+
+- a) `return`  
+- b) `exit()`  
+- c) `break` ✅  
+- d) `continue`
+
+---
+
+### Q3: What happens if you forget to change the condition in a `while` loop?
+
+- a) Syntax error  
+- b) The loop runs once  
+- c) The loop runs forever ✅  
+- d) Python fixes it automatically
+
+---
+
+### Q4: Fix this logic to print only odd numbers below 6:
+
+```python
+n = 0
+while n < 6:
+    if n % 2 == 0:
+        n += 1
+        continue
+    print(n)
+    n += 1
+```
+
+✅ Already correct! It skips even numbers.
+
+---
+
+### Q5: What’s the purpose of this loop?
+
+```python
+while True:
+    response = input("Type 'exit' to stop: ")
+    if response == "exit":
+        break
+```
+
+- a) Loop forever  
+- b) Loop until user types `exit` ✅  
+- c) Print something  
+- d) Error
+
+---
+
+> ✅ End of Lecture 5 – Understand `while` flow, avoid infinite traps, and design loops with purpose!
