@@ -44,15 +44,11 @@
 This repository includes course content and resources for the "Programming Basics with Python – Pazardzhik (May 2025)"
 program.
 
-📂 00_Links_Projects — External links and additional projects
-
+📂 00_Links_Projects — External links and additional projects  
 📂 00_PREPARATION_Python_Basics — Complete solutions to all preparation problems from https://alpha.judge.softuni.org/ (
-used offline before the course)
-
-📂 01_First_Steps_in_Coding — Lessons and exercises on basic input, output, and expressions
-
+used offline before the course)  
+📂 01_First_Steps_in_Coding — Lessons and exercises on basic input, output, and expressions  
 📂 02_Conditional_Statements — Lessons and exercises on bool-type, and if, if-else, if-elif-else  
-
 📄 README.md — Overview and course information
 
 ## ✅ TODO
