@@ -77,12 +77,16 @@
 # print('---')
 # print(a)
 
-num1 = 0.1
-num2 = 0.2
+# num1 = 0.1
+# num2 = 0.2
+#
+# num3 = num1 + num2
+#
+# print(num3)  # 0.3
 
-num3 = num1 + num2
 
-print(num3)  # 0.3
-
-
+for i in range(5):
+    print(i)
+    for j in range(3):
+        print(f'   -> {j}')
 
