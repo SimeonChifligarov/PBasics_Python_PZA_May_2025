@@ -49,6 +49,11 @@ program.
 used offline before the course)  
 📂 01_First_Steps_in_Coding — Lessons and exercises on basic input, output, and expressions  
 📂 02_Conditional_Statements — Lessons and exercises on bool-type, and if, if-else, if-elif-else  
+📂 03_Conditional_Statements_Advanced — Deeper logic with nested conditions, multiple branches, and practice scenarios  
+📂 04_For_Loop — Lessons and exercises on using `for` loops for iteration, ranges, and sequences  
+📂 05_While_Loop — Lessons and exercises on `while` loops, loop control, and user-driven repetition  
+📂 06_Nested_Loops — Practice with loops inside loops, pattern generation, and multi-dimensional logic  
+
 📄 README.md — Overview and course information
 
 ## ✅ Structure
