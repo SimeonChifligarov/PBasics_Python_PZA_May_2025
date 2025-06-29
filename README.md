@@ -51,7 +51,21 @@ used offline before the course)
 📂 02_Conditional_Statements — Lessons and exercises on bool-type, and if, if-else, if-elif-else  
 📄 README.md — Overview and course information
 
-## ✅ TODO
+## ✅ Structure
 
-- [ ] Add full structure of the repository with all folders and files
-- [ ] Include links to each topic’s exercises or notebooks (if applicable)
+```text
+PBasics_Python_PZA_May_2025/
+├── 00_Links_Projects/                 # Collection of useful links and reference projects
+├── 00_PREPARATION_Python_Basics/      # All problems solutions (not live, not in classes)
+├── 00_X_Notes_all_lectures/           # All lecture notes in raw text format
+├── 00_X_Notes_all_lectures_MD/        # Enriched notes (added content, quiz), in Markdown format for clean documentation
+├── 01_First_Steps_in_Coding/
+├── 02_Conditional_Statements/
+├── 03_Conditional_Statements_Advanced/
+├── 04_For_Loop/
+├── 05_While_Loop/
+├── 06_Nested_Loops/
+├── .gitignore
+├── LICENSE
+└── README.md
+
